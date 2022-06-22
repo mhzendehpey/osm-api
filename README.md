@@ -1,8 +1,8 @@
 # OSMAPI Package
-A small package to get data from OSM API directly
+A small package to get data from [OpenStreetMap API](https://www.openstreetmap.org/) directly
 
 # Description
-This package get Node, Way, and Relation geometry data directly from OSM API by provided OSM object ID, and parse it into Shapely objects. due to heavy dependencies of GeoPandas, GeoDataFrame export excluded. but you can easily convert Shapely to GeoPandas, here is an example:
+This package get Node, Way, and Relation geometry data directly from OSM API(instead of [Nominatim API](https://nominatim.openstreetmap.org/ui/details.html)) by provided OSM object ID, and parse it into [Shapely](https://pypi.org/project/Shapely/) objects. due to heavy dependencies of [GeoPandas](https://geopandas.org/en/stable/getting_started/install.html#dependencies), GeoDataFrame export excluded. but you can easily convert Shapely to GeoPandas, here is an example:
 
 ```python
 def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
