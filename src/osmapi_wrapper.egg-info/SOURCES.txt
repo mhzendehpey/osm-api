@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/osm_api/__init__.py
+src/osm_api/api.py
+src/osm_api/core.py
+src/osm_api/parser.py
+src/osmapi_wrapper.egg-info/PKG-INFO
+src/osmapi_wrapper.egg-info/SOURCES.txt
+src/osmapi_wrapper.egg-info/dependency_links.txt
+src/osmapi_wrapper.egg-info/requires.txt
+src/osmapi_wrapper.egg-info/top_level.txt

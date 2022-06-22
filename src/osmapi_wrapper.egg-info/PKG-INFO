@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: osm-api
-Version: 1.0.0
+Name: osmapi-wrapper
+Version: 1.0.1
 Summary: A small package to get data from OSM API directly
 Author-email: Mohammad Hossein Zendehpey <m.h.Zendehpey@gmail.com>
 Project-URL: Homepage, https://github.com/mhzendehpey/osm-api
