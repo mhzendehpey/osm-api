@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
-Name: osmapi
+Name: osm-api
 Version: 1.0.0
 Summary: A small package to get data from OSM API directly
 Author-email: Mohammad Hossein Zendehpey <m.h.Zendehpey@gmail.com>
-Project-URL: Homepage, https://github.com/mhzendehpey/osmapi
-Project-URL: Bug Tracker, https://github.com/mhzendehpey/osmapi/issues
+Project-URL: Homepage, https://github.com/mhzendehpey/osm-api
+Project-URL: Bug Tracker, https://github.com/mhzendehpey/osm-api/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
@@ -12,7 +12,7 @@ Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-# OSMAPI Package
+# osm_api Package
 A small package to get data from [OpenStreetMap](https://www.openstreetmap.org/) API directly
 
 # Description
@@ -20,7 +20,7 @@ This package get Node, Way, and Relation geometry data directly from OSM API(ins
 
 ```python
 def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
-    polygon = get_relation_as_polygon(osm_id)
+    polygon = osm_api.get_relation_as_polygon(osm_id)
     data = {'geometry': [polygon]}
     df = pd.DataFrame(data)
     gdf = geopandas.GeoDataFrame(df)
@@ -30,8 +30,8 @@ def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
 # Examples
 
 ```python
-import osmapi
-polygon = osmapi.get_relation(osm_id='537701')
-line_string = osmapi.get_way(osm_id='440582504')
-lat_lng = osmapi.get_node(osm_id='25960293')
+import osm_api
+polygon = osm_api.get_relation(osm_id='537701')
+line_string = osm_api.get_way(osm_id='440582504')
+lat_lng = osm_api.get_node(osm_id='25960293')
 ```
