@@ -1,11 +1,8 @@
 from xml.dom.minidom import Element
-from requests import Response
 from shapely.geometry import Polygon, LineString, MultiLineString
 from shapely import ops
 import osmapi.api as api
 import osmapi.parser as parser
-import pandas as pd
-import geopandas
 
 
 def get_latlng(element: Element) -> tuple:
@@ -50,14 +47,6 @@ def get_root(osm_id, type):
 def get_relation_as_polygon(osm_id: str) -> Polygon:
     root = get_root(osm_id, 'relation')
     return Polygon(get_boundary(root))
-
-
-def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
-    polygon = get_relation_as_polygon(osm_id)
-    data = {'geometry': [polygon]}
-    df = pd.DataFrame(data)
-    gdf = geopandas.GeoDataFrame(df)
-    return gdf
 
 
 def get_way_as_line_string(osm_id: str) -> LineString:
