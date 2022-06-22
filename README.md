@@ -1,4 +1,4 @@
-# OSMAPI Package
+# osm_api Package
 A small package to get data from [OpenStreetMap](https://www.openstreetmap.org/) API directly
 
 # Description
@@ -6,7 +6,7 @@ This package get Node, Way, and Relation geometry data directly from OSM API(ins
 
 ```python
 def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
-    polygon = get_relation_as_polygon(osm_id)
+    polygon = osm_api.get_relation_as_polygon(osm_id)
     data = {'geometry': [polygon]}
     df = pd.DataFrame(data)
     gdf = geopandas.GeoDataFrame(df)
@@ -16,8 +16,8 @@ def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
 # Examples
 
 ```python
-import osmapi
-polygon = osmapi.get_relation(osm_id='537701')
-line_string = osmapi.get_way(osm_id='440582504')
-lat_lng = osmapi.get_node(osm_id='25960293')
+import osm_api
+polygon = osm_api.get_relation(osm_id='537701')
+line_string = osm_api.get_way(osm_id='440582504')
+lat_lng = osm_api.get_node(osm_id='25960293')
 ```

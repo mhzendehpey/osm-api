@@ -1,8 +1,8 @@
 from xml.dom.minidom import Element
 from shapely.geometry import Polygon, LineString, MultiLineString
 from shapely import ops
-import osmapi.api as api
-import osmapi.parser as parser
+import osm_api.api as api
+import osm_api.parser as parser
 
 
 def get_latlng(element: Element) -> tuple:
