@@ -2,8 +2,7 @@
 A small package to get data from OSM API directly
 
 # Description
-This package get Node, Way, and Relation geometry data directly from OSM API by provided OSM object ID.
-Geometry data based on Shapely objects. due to heavy dependencies of GeoPandas, GeoDataFrame export excluded. but you can easily convert Shapely to GeoPandas, here is an example:
+This package get Node, Way, and Relation geometry data directly from OSM API by provided OSM object ID, and parse it into Shapely objects. due to heavy dependencies of GeoPandas, GeoDataFrame export excluded. but you can easily convert Shapely to GeoPandas, here is an example:
 
 ```python
 def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
