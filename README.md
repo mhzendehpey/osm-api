@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/osmapi-wrapper.svg)](https://pypi.org/project/osmapi-wrapper/)
+
 # osm_api Package
 A small package to get data from [OpenStreetMap](https://www.openstreetmap.org/) API directly
 
