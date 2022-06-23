@@ -8,7 +8,7 @@ This package get Node, Way, and Relation geometry data directly from OSM API(ins
 
 ```python
 def get_relation_as_gdf(osm_id: str) -> geopandas.GeoDataFrame:
-    polygon = osm_api.get_relation_as_polygon(osm_id)
+    polygon = osm_api.get_relation(osm_id)
     data = {'geometry': [polygon]}
     gdf = geopandas.GeoDataFrame(data)
     return gdf
