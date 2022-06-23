@@ -4,3 +4,11 @@ src/osm_api/__pycache__/__init__.cpython-39.pyc
 src/osm_api/__pycache__/api.cpython-39.pyc
 src/osmapi_test.ipynb
 .vscode/settings.json
+dist/osmapi_wrapper-1.0.2.tar.gz
+.gitignore
+src/osmapi_wrapper.egg-info/dependency_links.txt
+src/osmapi_wrapper.egg-info/requires.txt
+src/osmapi_wrapper.egg-info/PKG-INFO
+src/osmapi_wrapper.egg-info/top_level.txt
+src/osmapi_wrapper.egg-info/SOURCES.txt
+dist/osmapi_wrapper-1.0.2-py3-none-any.whl
