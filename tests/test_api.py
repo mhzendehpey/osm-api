@@ -1,5 +1,5 @@
 import pytest
-from ..src.osm_api.api import get_url, get_object
+from osm_api.api import get_url, get_object
 
 
 class TestGetUrl():
