@@ -13,3 +13,4 @@ src/osmapi_wrapper.egg-info/top_level.txt
 src/osmapi_wrapper.egg-info/SOURCES.txt
 dist/osmapi_wrapper-1.0.2-py3-none-any.whl
 tests/__pycache__/test_api.cpython-39-pytest-7.1.2.pyc
+codecov.exe
